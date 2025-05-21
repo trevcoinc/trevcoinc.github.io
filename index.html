@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trevco Inc - Join the Future</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        'gradient': 'gradient 8s linear infinite',
+                    },
+                    keyframes: {
+                        gradient: {
+                            '0%, 100%': {
+                                'background-size': '200% 200%',
+                                'background-position': 'left center'
+                            },
+                            '50%': {
+                                'background-size': '200% 200%',
+                                'background-position': 'right center'
+                            },
+                        },
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .animate-gradient {
+            background: linear-gradient(-45deg, #3b82f6, #2563eb, #1d4ed8, #1e40af);
+            background-size: 200% 200%;
+            animation: gradient 8s ease infinite;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <header class="animate-gradient min-h-screen flex items-center">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white mb-8 leading-tight">
+                    We're a T.E.A.M
+                </h1>
+                <div class="max-w-3xl mx-auto space-y-6">
+                    <p class="text-xl sm:text-xl text-white/90 leading-relaxed">
+                        When we use the acronym T.E.A.M. to describe our Core Values at Trevco, we're not talking about your friendly game of flag football. No no no. We're talking Justice League, the Avengers, the Jedi, Teenage Mutant Ninja Turtles.
+                    </p>
+                    <p class="text-xl sm:text-2xl text-white/90 leading-relaxed">
+                        We are a T.E.A.M. that can do anything we put our minds to. T.E.A.M. is more than 4 core values. It's how we bring life to our ideas. It's how we move forward.
+                    </p>
+                </div>
+                <div class="mt-12">
+                    <a href="#jobs" 
+                       class="inline-block bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold 
+                              transform transition-all duration-300 hover:scale-105 hover:shadow-xl
+                              focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-blue-600">
+                        View Open Positions
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="jobs" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">
+                Open Positions
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Senior Software Engineer -->
+                <a href="senior-data-engineer.html">
+                <div class="bg-white rounded-2xl shadow-lg p-8 transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+                    <h3 class="text-2xl font-bold text-blue-600 mb-4">Senior Data Engineer</h3>
+                    <p class="text-gray-600 mb-6">Lead our data integration and ETL processes in a fully remote capacity.</p>
+                </div>
+            </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-gray-400">&copy; 2024 Trevco Inc. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
